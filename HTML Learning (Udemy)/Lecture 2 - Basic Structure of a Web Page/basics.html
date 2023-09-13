@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<!-- lecture 3 head tag-->
+
+<head>
+    <title> My First Web Page </title>
+    <meta name="description" content="Page Description Here" />
+    <meta http-equiv="Content-Type" content="text/html" ; charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+        Body {
+            color: red;
+        }
+    </style>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+
+<!-- lecture 4 body tag -->
+
+<body>
+
+    <!-- lecture 5  paragraaph tag to break into paragraph-->
+    <p>This is a Sample HTML Document.</p>
+    This Javascript function will capitalize my name:
+    <p>Enter your name: <input type="text" id="fname" onchange="myFunction()"></p>
+
+
+    <!-- lecture 6 br tag to break the pagragraph but with a small line space -->
+    <!-- lecture 7 its ignore spaces and thats called "white space colasping" 
+        spaces ignored by the tab key, space key or return key all ignored in html
+        se we can use "&nbps;"  which means nonBreakingSpace to get space in which browser read this as a space. 
+    Example: below -->
+    <p>this is line 1.<br> this is line 2. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; this is line 3.</p>
+
+
+
+    <!-- lecture 8: header tag  comes in different sizes-->
+    <h1>Header 1</h1>
+    <h2>Header 2</h2>
+    <h3>Header 3</h3>
+    <h4>Header 4</h4>
+    <h5>Header 5</h5>
+    <h6>Header 6</h6>
+    <!-- total there are 6 header tags in html where 1 is the greater one and 6 is the smallest -->
+
+    <!-- lecture 9  formating texts to make it bold, italic, underline and others -->
+
+    <p><strong>Bold text</strong><br>
+        <em>Italic Text</em><br>
+        <u>Underline Text</u><br>
+        <strike>Strike tag</strike><br><br>
+        <!-- here order doesnot matter -->
+        <em><strong><u>Bold italic and underline</u></strong></em>
+    </p>
+
+    <!-- lecture 10 inline text formatting  -->
+
+    <h4>
+        <font face="arial" size="22" color="blue">Header 4</font>
+    </h4>
+
+    <!-- lecture 11 un ordered list -->
+    <h3>Sports</h3>
+    <ul>
+        <li>Cricket</li>
+        <li>Football</li>
+        <li>BasketBall</li>
+        <li>Hockey</li>
+    </ul>
+
+    <!-- lecture 12 ordered list -->
+    <h3>Sports</h3>
+    <ol>
+        <li>Cricket</li>
+        <li>Football</li>
+        <li>Basketball</li>
+        <li>Hockey</li>
+    </ol>
+
+    <!-- lecture 13 img tag here p is for space between h3 and paragraph tag -->
+    <h3>Vacation Pictures</h3>
+    <p>
+        <!-- relative file reference  -->
+        <img src="/Section 2 - HTML Development/Lecture 13 - Images/FL.jpg" width="333" height="250">
+        <img src="/Section 2 - HTML Development/Lecture 13 - Images/LV.jpg" width="375" height="250">
+        <img src="/Section 2 - HTML Development/Lecture 13 - Images/NY.jpg" width="374" height="250">
+        <!-- absolute file reference -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Houston_night.jpg" width="389" height="250">
+    </p>
+
+    <!-- lecture 16 create link in html for redirection using a tag -->
+    <a href="https://www.miamiherald.com/miami-com/"> <img src="/Section 2 - HTML Development/Lecture 13 - Images/FL.jpg" width="333" height="250"></a>
+
+
+    <!-- to  open the link in the other tag we use target="_blank" attribute -->
+    <p>
+        <a href="https://unsplash.com/" target="_blank">unsplash.com</a>
+    </p>
+
+</body>
+
+</html>

@@ -1,0 +1,130 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>Table Tutorial</title>
+    <meta charset="utf-8">
+</head>
+
+
+<body>
+
+    <!-- name can distinguish between one another -->
+
+
+    <!-- lecture 26 Post vs Get
+      https helps to connect client to the server or say communication between my web browser and server
+      which we can transmit data using Get method or the post method
+
+
+      GET
+      it's request data from the specified resource.
+
+      its sends data though the url string
+
+      can be cached
+      remain in browser history
+      should only be used to recieve data
+      have length restrictions
+      should not be used for sensitive data
+      can be bookmarked
+
+      POST
+      it's submit data to processes to a specified resource.
+
+      its sends the name/value pairs in the http message body
+
+      no restrictions on data length
+      cannot be booked marked
+      do not remain in browser history
+      requests are never cached
+  
+  
+  
+  -->
+
+    <!-- lectuere 27 form inputs text fields  -->
+
+
+    <form name="employment" action="send.php" method="post">
+        <table width="600" border="1" cellspacing="2" cellpadding="2">
+            <tr>
+                <td>Employment Application</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fname" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="fname" maxlength="50"></td>
+            </tr>
+
+            <!-- lecture 28 select menus -->
+            <tr>
+                <td>Position</td>
+                <td>
+                    <select name="Position">
+                      <option value="AC">Accountant</option>
+                      <option value="RE">Recieptian</option>
+                      <option value="AD">Adminstrator</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience Level</td>
+                <td>
+                    <select name="Experience">
+                    <option value="EL">Entry Level</option>
+                    <option value="SL">Senior Level;</option>
+                    <option value="VE">Very Experience</option>
+                  </select>
+                </td>
+            </tr>
+            <!-- lecture 29 checkbox and radio buttons -->
+            <tr>
+                <td>Job Type</td>
+                <td>
+                    <input type="checkbox" name="ft">Full Time
+                    <input type="checkbox" name="pt">Part Time
+                    <input type="checkbox" name="ct">Contract
+                </td>
+            </tr>
+            <!-- radio button  same name in radio button termed as group so its helps in selecting one in this group-->
+            <tr>
+                <td>Employement Status</td>
+                <td>
+
+                    <input type="radio" name="estatus" value="employed">Employed
+                    <input type="radio" name="estatus" value="unemployed">Unemployed
+                    <input type="radio" name="estatus" value="student">Student
+                </td>
+            </tr>
+
+            <!-- lecture 30 form text area and Buttons -->
+            <tr>
+                <td>Additional Comments</td>
+                <td>
+                    <!-- here row and column is for height and width after the width the text will be filled up compeletely 
+                      then the scroll wheel will be activated  -->
+                    <textarea name="comments" cols="45" rows="5"></textarea>
+                </td>
+            </tr>
+            <!-- button  for submmit and reset -->
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Submit" name="submit">
+                    <input type="reset" value="Reset" name="reset">
+                </td>
+            </tr>
+        </table>
+
+    </form>
+
+
+</body>
+
+</html>
